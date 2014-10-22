@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 Quiz
+
+	p Choose quiz language:
+	form#chooseLanguage
+		input(type="text" name="language" placeholder="Language")
+		input(type="submit")
+
+	ol#quiz-questions
+
+	script(src="quiz.js")
+		

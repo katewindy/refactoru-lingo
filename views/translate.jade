@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 Translate a Word
+
+	form#translation-form
+		input(type="text", name="originalLang", placeholder="Original Language")
+		input(type="text", name="newLang", placeholder="New Language")
+		input(type="text", name="word", placeholder="Word to Translate")
+		input(type="submit")
+
+	div#translationBox
+
+	script(src="./main.js")
