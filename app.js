@@ -18,7 +18,7 @@ app.get('/translate', indexController.translate);
 app.get("/quiz", indexController.quiz);
 
 app.post('/translator', indexController.translator);
-app.get("/getQuiz", apiController.getQuiz);
+app.post("/getQuiz", apiController.getQuiz);
 app.post("/answerSubmit",apiController.answerSubmit);
 
 var server = app.listen(3459, function() {
